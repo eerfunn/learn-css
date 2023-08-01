@@ -1,0 +1,31 @@
+* {
+  font-family: monospace;
+}
+body {
+  margin: 0px;
+  background: #121212;
+  color: snow;
+  font-size: 22px;
+}
+h1,
+h2 {
+  color: skyblue;
+}
+p {
+  color: pink;
+}
+
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
+  color: black;
+}
+.snow {
+  color: snow;
+}
+#second {
+  font-style: italic;
+}
+#third {
+  color: greenyellow;
+}
