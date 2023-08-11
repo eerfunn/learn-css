@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+body {
+  color: snow;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  background-color: black;
+}
+.block {
+  width: 10vw;
+  height: 10vw;
+  background-color: blue;
+  padding: 1rem;
+}
+.left {
+  float: left;
+  margin-right: 10px;
+}
+.right {
+  float: right;
+  margin-left: 10px;
+}
+/*clear, is used to clear any element that's not a part of the floated element*/
+.clear {
+  clear: both;
+}
+.container {
+  background-color: skyblue;
+  border: 1px solid blue;
+  padding: 1rem;
+  display: flow-root;
+}
