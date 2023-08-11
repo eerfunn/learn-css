@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: snow;
+  background-color: #28282f;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hd"
+    "mn"
+    "ft";
+  row-gap: 1rem;
+  margin: 0 1rem;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  grid-area: hd;
+  flex-direction: row wrap;
+  justify-content: space-between;
+}
+.header .left-header {
+  display: flex;
+  align-items: center;
+}
+.btn-header {
+  color: white;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "fil fil fil" "vid vid vid";
+  row-gap: 1rem;
+}
+.filter {
+  grid-area: fil;
+  width: 100%;
+  position: sticky;
+  height: max-content;
+  display: flex;
+  flex-flow: row wrap;
+}
+.filter a {
+  margin: 5px;
+  width: max-content;
+  height: max-content;
+}
+.btn-filter {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+.btn-filter:active {
+  color: #00a95a;
+  border: 1px solid #00a95a;
+  background-color: #29392e;
+}
+
+.videos {
+  margin-top: 10px;
+  padding: 0 5px;
+  grid-area: vid;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.videox {
+  width: 15%;
+  margin: 10px 0px;
+  background-color: red;
+  height: 400px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .videox {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .videox {
+    width: 48%;
+  }
+}
+/* Media query at 1024 to 3 vid and 580 to 2 vid */
